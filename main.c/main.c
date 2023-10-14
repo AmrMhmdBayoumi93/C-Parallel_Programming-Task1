@@ -4,41 +4,57 @@
 
 int main()
 {
+
+
                 // the Author is Amr Muhammad Bayoumi
+                // academic num 200461
+
                 // 13-Oct-2023
                 //  create a Register ,login system Authentication in C languge
 
 
-                do {
-                          char username []="Amr";
-                     char password []="12345";
-        char user_input [10];
 
-        printf("\n Enter your  password :");
-        scanf("%s",&user_input);
-        if(!strcmp(user_input,password))    {
-            printf("Succes LOGIN..:) \n ");
+
+
+
+
+
+    int counter =0;
+        do{
+
+        char username [20];
+        char password [20];
+
+        printf("\n Enter your  username :");
+        scanf("%s",&username);
+         printf("\n Enter your  password :");
+        scanf("%s",&password);
+
+        if(strcmp(username,"Amr")==0&&strcmp(password,"123")==0 )
+            {
+            printf("  Success LOGIN..:) \n ");
             break;
 
         }else {
            printf("password is Not true ... try again. \n ");
 
         }
+            counter++;
 
 
-                }while(1);
-
-
-
-
+        }while(counter<3);
 
 
 
+     //  printf("username an password are incorrect.\n");
 
+        if (counter>=3){
+            printf("Please .. try agian with 5 Minutes.\n");
 
-
-
-
+        }
+            else{
+                printf("username and password are correct.\n");
+            }
 
 
     return 0;
