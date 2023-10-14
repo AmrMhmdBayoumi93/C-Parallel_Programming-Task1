@@ -18,13 +18,13 @@ int main()
 
 
 
+       char username [20];
+        char password [20];
 
     int counter =0;
         do{
 
-        char username [20];
-        char password [20];
-
+        
         printf("\n Enter your  username :");
         scanf("%s",&username);
          printf("\n Enter your  password :");
